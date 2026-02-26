@@ -547,21 +547,119 @@
     }
 
     /* MOBILE */
-    @media (max-width: 900px) {
-      nav { padding: 20px 24px; }
+    @media (max-width: 768px) {
+      body { cursor: auto; }
+      .cursor, .cursor-ring { display: none; }
+
+      nav {
+        padding: 16px 20px;
+        background: rgba(10,10,10,0.97);
+      }
       .nav-links { display: none; }
-      section { padding: 60px 24px; }
-      .hero-content { padding: 0 24px; }
+      .nav-logo { font-size: 1rem; }
+
+      .hero {
+        min-height: 100svh;
+        align-items: flex-end;
+        padding-bottom: 60px;
+      }
+      .hero-line-left, .hero-line-right { display: none; }
       .hero-logo-img { display: none; }
-      .about { grid-template-columns: 1fr; gap: 40px; }
-      .services-grid { grid-template-columns: 1fr; }
-      #info { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px; }
-      .cta-band { flex-direction: column; gap: 24px; padding: 40px 24px; text-align: center; }
-      .cta-band-btn { margin-left: 0; }
-      footer { flex-direction: column; gap: 16px; padding: 30px 24px; text-align: center; }
-      .social-links { flex-direction: column; align-items: center; }
-      .divider { padding: 0 24px; }
-      #social { padding: 60px 24px; }
+      .hero-open-badge { display: none; }
+
+      .hero-content {
+        padding: 80px 20px 0;
+        max-width: 100%;
+      }
+      .hero-eyebrow {
+        font-size: 0.65rem;
+        letter-spacing: 0.25em;
+        flex-wrap: wrap;
+      }
+      .hero-title {
+        font-size: clamp(3.2rem, 16vw, 5rem);
+        line-height: 0.92;
+      }
+      .hero-subtitle {
+        font-size: 1rem;
+        letter-spacing: 0.05em;
+        margin: 20px 0 32px;
+        max-width: 100%;
+      }
+      .hero-cta {
+        width: 100%;
+        justify-content: center;
+        padding: 20px 24px;
+        font-size: 1.1rem;
+      }
+
+      .divider { padding: 0 20px; margin: 50px 0; }
+
+      section { padding: 60px 20px; }
+
+      .about { grid-template-columns: 1fr; gap: 48px; }
+      .about-visual { order: -1; }
+      .about-img-frame { padding: 12px; }
+      .about-stats { gap: 2px; }
+      .stat-box { padding: 20px 16px; }
+      .stat-num { font-size: 2.2rem; }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 2px;
+        margin-top: 40px;
+      }
+      .service-card { padding: 32px 24px; }
+      .service-number { font-size: 3rem; }
+      .service-name { font-size: 1.2rem; }
+      .service-price { font-size: 1.5rem; }
+
+      #info {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        padding: 60px 20px;
+      }
+      .info-item { gap: 16px; }
+      .info-value { font-size: 0.95rem; }
+
+      .hours-row { padding: 12px 0; }
+
+      .cta-band {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .cta-band-title { font-size: 1.6rem; }
+      .cta-band-btn {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 18px 24px;
+      }
+
+      #social { padding: 60px 20px; }
+      .social-links {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        margin-top: 36px;
+      }
+      .social-link {
+        justify-content: center;
+        padding: 18px 24px;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 10px;
+        padding: 28px 20px;
+        text-align: center;
+      }
+      .footer-logo { font-size: 1.2rem; }
+      .footer-copy { font-size: 0.72rem; }
+
+      .section-title { font-size: clamp(2rem, 9vw, 3rem); }
     }
   </style>
 </head>
